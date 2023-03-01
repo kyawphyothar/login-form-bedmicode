@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+$font-family-sans-serif:'Poppins';
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 6,
+  8: $spacer * 7,
+  9: $spacer * 8,
+  10:$spacer * 9,
+
+);
+
+$theme-colors:(
+    "first": hsl(244, 75%, 57%),
+    "background": rgba(228, 225, 225, 0.879),
+    "second": hsl(244, 4%, 36%),
+    "third":hsl(249, 64%, 47%),
+);
+// $input-focus-bg:hsl(249, 64%, 47%);
+
+$input-padding-x-sm:1.2rem;
+$input-padding-y-sm:0.6rem;
+
+$btn-padding-x:2.7rem;
+$btn-padding-y:0.7rem;
+
+
+// $input-border-color:hsl(249, 64%, 47%);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+//custom css
+
+.login-bg{
+    position: relative;
+    border-radius: 2rem;
+    width: 80%;
+    height :100%;
+    object-fit: cover;
+    object-position: center;
+};
+
+.login-content {
+    position: absolute;
+right:150px;
+top: 10%;
+    background-color:#dedbdb6a;
+    backdrop-filter: blur(10px);
+};
+
+.login__input{
+  outline: none;
+};
+
+@include media-breakpoint-down(sm) {
+    
+    .login-bg{
+        width: 100%;
+        height: 500px;
+    };
+
+    .login-content{
+        top: 0;
+      right:30px;
+         }
+
+};
+
+@include media-breakpoint-down(md){
+   .login-bg{
+    width:600px;
+    height: 500px;
+   }
+}
