@@ -12,3 +12,4 @@
 💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
 ![preview img](/preview.png)
+- I tried my best to write the design like this. Not perfect but this is from my one of my early pjs.
